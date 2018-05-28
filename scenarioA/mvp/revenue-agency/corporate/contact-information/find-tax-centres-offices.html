@@ -141,70 +141,35 @@
 			"noForm": true,
 			"base": { "live": true },
 			"noreqlabel": true,
-			"default": { "action": "addClass", "source":"#question1,#question1button,#question2button,#question2abutton,#question3buttona,#question3buttonb,#question3buttonc,#question4buttona,#question4buttonb,#question4buttonc,#question2,#question2a,#question3,#question4,#result1,#result2,#result-si-bc-tso,#result-jonq,#result-winn-1,#result-winn-2,#result-sud-1,#result-sud-2,#result-pei,#result-int", "class": "hidden" }
+			"default": { "action": "addClass", "source":"#question1,#question1button,#question2button,#question2abutton,#question3buttona,#question3buttonb,#question3buttonc,#question4buttona,#question4buttonb,#question4buttonc,#question2,#question2a,#question3,#answer3,#question4,#result1,#result2,#result-si-bc-tso,#result-jonq,#result-winn-1,#result-winn-2,#result-sud-1,#result-sud-2,#result-pei,#result-int", "class": "hidden" }
 			}'>
 			<p>What do you want to do?</p>
 			<ul>
 				<li data-wb-fieldflow='{"action": "append", "source":"#question2" }'>Mail or fax something to the CRA</li>
-				<li data-wb-fieldflow='{ "action": "append", "source":"#question2b" }'>Drop something off</li> <!-- same next step -->
-				<li data-wb-fieldflow='{ "action": "append", "source":"#question2b" }'>I have an appointment</li> <!-- same next step -->
+				<li data-wb-fieldflow='{"action": "removeClass", "source":"#answer3", "class": "hidden"}'>Drop something off</li> <!-- same next step -->
+				<li data-wb-fieldflow='{"action": "removeClass", "source":"#answer3", "class": "hidden"}'>I have an appointment</li> <!-- same next step -->
 			</ul>
 		</div>
 
-
-
-		<!--Question 3 physical office-->
-		<div id="question2b" class="wb-fieldflow-sub hidden" data-wb-fieldflow='{"renderas":"", "noreqlabel": true}'>
-			<p>Choose your province</p>
-			<ul>
-				<li data-wb-fieldflow='{"action": "removeClass", "source":"#result-winn-1", "class": "hidden" }'>Alberta</li>
-				<li data-wb-fieldflow='{"action": "append", "source":"#bc" }'>British Columbia</li>
-				<li data-wb-fieldflow='{"action": "removeClass", "source":"#result-winn-1", "class": "hidden" }'>Manitoba</li>
-				<li data-wb-fieldflow='{"action": "removeClass", "source":"#result-winn-1", "class": "hidden" }'>New Brunswick</li>
-				<li data-wb-fieldflow='{"action": "removeClass", "source":"#result-winn-1", "class": "hidden" }'>Newfoundland and Labrador</li>
-				<li data-wb-fieldflow='{"action": "removeClass", "source":"#result-winn-1", "class": "hidden" }'>Northwest Territories</li>
-				<li data-wb-fieldflow='{"action": "removeClass", "source":"#result-winn-1", "class": "hidden" }'>Nova Scotia</li>
-				<li data-wb-fieldflow='{"action": "removeClass", "source":"#result-winn-1", "class": "hidden" }'>Nunavut</li>
-				<li data-wb-fieldflow='{"action": "removeClass", "source":"#result-winn-1", "class": "hidden" }'>Ontario</li>
-				<li data-wb-fieldflow='{"action": "removeClass", "source":"#result-winn-1", "class": "hidden" }'>Prince Edward Island</li>
-				<li data-wb-fieldflow='{"action": "removeClass", "source":"#result-winn-1", "class": "hidden" }'>Quebec</li>
-				<li data-wb-fieldflow='{ "action": "removeClass", "source":"#result-winn-1", "class": "hidden" }'>Saskatchewan</li>
-				<li data-wb-fieldflow='{ "action": "removeClass", "source":"#result-winn-1", "class": "hidden" }'>Yukon</li>
-				<li data-wb-fieldflow='{"action": "removeClass", "source":"#result-winn-1", "class": "hidden" }'>Outside Canada</li>
-			</ul>
-		</div>
-
-		<!--physical office BC-->
-		<div id="bc" class="wb-fieldflow-sub hidden" data-wb-fieldflow='{"renderas":"", "noreqlabel": true}'>
-			<p>Select the city closest to you</p>
-			<ul>
-				<li data-wb-fieldflow='{"action": "removeClass", "source":"#result-winn-1", "class": "hidden" }'>Kelowna (Southern Interior B.C.)</li>
-				<li data-wb-fieldflow='{"action": "removeClass", "source":"#result-pei", "class": "hidden" }'>Prince George (Vancouver Island and North)</li>
-				<li data-wb-fieldflow='{"action": "removeClass", "source":"#result-si-bc-tso", "class": "hidden" }'>Penticton (Souther Interior B.C.)</li>
-				<li data-wb-fieldflow='{"action": "removeClass", "source":"#result-winn-1", "class": "hidden" }'>Surrey (Fraser Valley)</li>
-				<li data-wb-fieldflow='{"action": "removeClass", "source":"#result-winn-1", "class": "hidden" }'>Vancouver</li>
-				<li data-wb-fieldflow='{"action": "removeClass", "source":"#result-winn-1", "class": "hidden" }'>Victoria (Vancouver Island and North)</li>
-			</ul>
-		</div>
 
 
 		<div id="question2" class="wb-fieldflow-sub hidden" data-wb-fieldflow='{"renderas":"radio", "noreqlabel": true}'>
 			<p>What are you mailing or faxing?</p>
 			<ul>
 
-					<li data-wb-fieldflow='{"action": "append", "source":"#question3" }'>
+					<li data-wb-fieldflow='{"action": "removeClass", "source":"#answer3", "class": "hidden"}'>
 						T1 individual income tax return</li>
 
 
-						<li data-wb-fieldflow='{"action": "append", "source":"#question3c" }'>
+						<li data-wb-fieldflow='{"action": "removeClass", "source":"#answer3", "class": "hidden"}'>
 
 							T2 corporate income tax return</li>
-							<li data-wb-fieldflow='{"action": "append", "source":"#question3" }'>
+							<li data-wb-fieldflow='{"action": "removeClass", "source":"#answer3", "class": "hidden"}'>
 
 			Family and child benefits form</li>
 
 
-				<li data-wb-fieldflow='{"action": "append", "source":"#question3b" }'>
+				<li data-wb-fieldflow='{"action": "removeClass", "source":"#answer3", "class": "hidden"}'>
 
 				All business documents (except T2)</li>
 
@@ -213,68 +178,23 @@
 
 
 		<!--Question 3 individual and benefits tax centre-->
-		<div id="question3" class="wb-fieldflow-sub hidden" data-wb-fieldflow='{"renderas":"", "noreqlabel": true}'>
-			<p>Choose your province</p>
-			<ul>
-				<li data-wb-fieldflow='{"action": "removeClass", "source":"#result-winn-1", "class": "hidden" }'>Alberta</li>
-				<li data-wb-fieldflow='{"action": "removeClass", "source":"#result-winn-1", "class": "hidden" }'>British Columbia</li>
-				<li data-wb-fieldflow='{"action": "removeClass", "source":"#result-winn-1", "class": "hidden" }'>Manitoba</li>
-				<li data-wb-fieldflow='{"action": "removeClass", "source":"#result-winn-1", "class": "hidden" }'>New Brunswick</li>
-				<li data-wb-fieldflow='{"action": "removeClass", "source":"#result-winn-1", "class": "hidden" }'>Newfoundland and Labrador</li>
-				<li data-wb-fieldflow='{"action": "removeClass", "source":"#result-winn-1", "class": "hidden" }'>Northwest Territories</li>
-				<li data-wb-fieldflow='{"action": "removeClass", "source":"#result-winn-1", "class": "hidden" }'>Nova Scotia</li>
-				<li data-wb-fieldflow='{"action": "removeClass", "source":"#result-winn-1", "class": "hidden" }'>Nunavut</li>
-				<li data-wb-fieldflow='{ "action": "append", "source":"#question4" }'>Ontario</li>
-				<li data-wb-fieldflow='{ "action": "append", "source":"#question3" }'>Prince Edward Island</li>
-				<li data-wb-fieldflow='{ "action": "append", "source":"#question3" }'>Quebec</li>
-				<li data-wb-fieldflow='{ "action": "removeClass", "source":"#result-winn-1", "class": "hidden" }'>Saskatchewan</li>
-				<li data-wb-fieldflow='{ "action": "removeClass", "source":"#result-winn-1", "class": "hidden" }'>Yukon</li>
-				<li data-wb-fieldflow='{ "action": "append", "source":"#result-int }'>Outside Canada</li>
-			</ul>
-		</div>
+		<div id="answer3" class="hidden">
+<p>Enter your postal code <br>
+			<input type="text" name="postalcode">
+			<button class="btn btn-default" type="button">
+			Search
+		</button>
+		</input>
 
-		<!--Question 3 business tax centre-->
-		<div id="question3b" class="wb-fieldflow-sub hidden" data-wb-fieldflow='{"renderas":"", "noreqlabel": true}'>
-			<p>Choose your province</p>
-			<ul>
-				<li data-wb-fieldflow='{"action": "removeClass", "source":"#result-winn-2", "class": "hidden" }'>Alberta</li>
-				<li data-wb-fieldflow='{"action": "removeClass", "source":"#result-pei", "class": "hidden" }'>British Columbia</li>
-				<li data-wb-fieldflow='{"action": "removeClass", "source":"#result-winn-2", "class": "hidden" }'>Manitoba</li>
-				<li data-wb-fieldflow='{"action": "removeClass", "source":"#result-pei", "class": "hidden" }'>New Brunswick</li>
-				<li data-wb-fieldflow='{"action": "removeClass", "source":"#result-pei", "class": "hidden" }'>Newfoundland and Labrador</li>
-				<li data-wb-fieldflow='{"action": "removeClass", "source":"#result-pei", "class": "hidden" }'>Northwest Territories</li>
-				<li data-wb-fieldflow='{"action": "removeClass", "source":"#result-pei", "class": "hidden" }'>Nova Scotia</li>
-				<li data-wb-fieldflow='{"action": "removeClass", "source":"#result-pei", "class": "hidden" }'>Nunavut</li>
-				<li data-wb-fieldflow='{ **needs a postal code lookup**}'>Ontario</li>
-				<li data-wb-fieldflow='{"action": "removeClass", "source":"#result-pei", "class": "hidden" }'>Prince Edward Island</li>
-				<li data-wb-fieldflow='{"action": "removeClass", "source":"#result-pei", "class": "hidden" }'>Quebec</li>
-				<li data-wb-fieldflow='{ "action": "removeClass", "source":"#result-winn-2", "class": "hidden" }'>Saskatchewan</li>
-				<li data-wb-fieldflow='{ "action": "removeClass", "source":"#result-pei", "class": "hidden" }'>Yukon</li>
-				<li data-wb-fieldflow='{"action": "removeClass", "source":"#result-int", "class": "hidden" }'>Outside Canada</li>
-			</ul>
+  </p>
+
+
+
 		</div>
 
 
-		<!--Question 3 t2 forms-->
-		<div id="question3c" class="wb-fieldflow-sub hidden" data-wb-fieldflow='{"renderas":"", "noreqlabel": true}'>
-			<p>Choose your province</p>
-			<ul>
-				<li data-wb-fieldflow='{"action": "removeClass", "source":"#result-winn-1", "class": "hidden" }'>Alberta</li>
-				<li data-wb-fieldflow='{"action": "removeClass", "source":"#result-winn-1", "class": "hidden" }'>British Columbia</li>
-				<li data-wb-fieldflow='{"action": "removeClass", "source":"#result-winn-1", "class": "hidden" }'>Manitoba</li>
-				<li data-wb-fieldflow='{"action": "removeClass", "source":"#result-winn-1", "class": "hidden" }'>New Brunswick</li>
-				<li data-wb-fieldflow='{"action": "removeClass", "source":"#result-winn-1", "class": "hidden" }'>Newfoundland and Labrador</li>
-				<li data-wb-fieldflow='{"action": "removeClass", "source":"#result-winn-1", "class": "hidden" }'>Northwest Territories</li>
-				<li data-wb-fieldflow='{"action": "removeClass", "source":"#result-winn-1", "class": "hidden" }'>Nova Scotia</li>
-				<li data-wb-fieldflow='{"action": "removeClass", "source":"#result-winn-1", "class": "hidden" }'>Nunavut</li>
-				<li data-wb-fieldflow='{ "action": "append", "source":"#question4" }'>Ontario</li>
-				<li data-wb-fieldflow='{ "action": "append", "source":"#question3" }'>Prince Edward Island</li>
-				<li data-wb-fieldflow='{ "action": "append", "source":"#question3" }'>Quebec</li>
-				<li data-wb-fieldflow='{ "action": "removeClass", "source":"#result-winn-1", "class": "hidden" }'>Saskatchewan</li>
-				<li data-wb-fieldflow='{ "action": "removeClass", "source":"#result-winn-1", "class": "hidden" }'>Yukon</li>
-				<li data-wb-fieldflow='{ "action": "append", "source":"#result-int }'>Outside Canada</li>
-			</ul>
-		</div>
+
+
 
 <!-- Tax offices -->
 
