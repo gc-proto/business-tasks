@@ -143,45 +143,7 @@
 	 <form method="get">
 
 		<!--Question 1-->
-		<div id="question1" class="wb-fieldflow" data-wb-fieldflow='{
-			"renderas":"radio",
-			"noForm": true,
-			"base": { "live": true },
-			"noreqlabel": true,
-			"default": { "action": "addClass", "source":"#question1,#question1button,#question2button,#question2abutton,#question3buttona,#question3buttonb,#question3buttonc,#question4buttona,#question4buttonb,#question4buttonc,#question2,#question2a,#question3,#answer3,#question4,#result1,#result2,#result-si-bc-tso,#result-jonq,#result-winn-1,#result-winn-2,#result-sud-1,#result-sud-2,#result-pei,#result-int", "class": "hidden" }
-			}'>
-			<p>What do you want to do?</p>
-			<ul>
-				<li data-wb-fieldflow='{"action": "append", "source":"#question2" }'>Mail or fax something to the CRA</li>
-				<li data-wb-fieldflow='{"action": "removeClass", "source":"#answer3", "class": "hidden"}'>Drop something off</li> <!-- same next step -->
-				<li data-wb-fieldflow='{"action": "removeClass", "source":"#answer3", "class": "hidden"}'>I have an appointment</li> <!-- same next step -->
-			</ul>
-		</div>
 
-
-
-		<div id="question2" class="wb-fieldflow-sub hidden" data-wb-fieldflow='{"renderas":"radio", "noreqlabel": true}'>
-			<p>What are you mailing or faxing?</p>
-			<ul>
-
-					<li data-wb-fieldflow='{"action": "removeClass", "source":"#answer3", "class": "hidden"}'>
-						T1 individual income tax return</li>
-
-
-						<li data-wb-fieldflow='{"action": "removeClass", "source":"#answer3", "class": "hidden"}'>
-
-							T2 corporate income tax return</li>
-							<li data-wb-fieldflow='{"action": "removeClass", "source":"#answer3", "class": "hidden"}'>
-
-			Family and child benefits form</li>
-
-
-				<li data-wb-fieldflow='{"action": "removeClass", "source":"#answer3", "class": "hidden"}'>
-
-				All business documents (except T2)</li>
-
-			</ul>
-		</div>
 
 <script>
 
@@ -202,7 +164,7 @@ display: none;
 </style>
 
 
-		<div id="answer3">
+		<div id="answer3" class="">
 <p>Enter your postal code <br>
 			<input type="text">	</input>
 			<button id="#btn1" class="btn btn-default"> Search </button>
