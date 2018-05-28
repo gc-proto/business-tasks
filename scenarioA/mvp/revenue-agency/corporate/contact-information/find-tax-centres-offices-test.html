@@ -49,9 +49,13 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
-$("#bt1n").on("click", function(){
+
+$(document).ready(function(){
+    $("button").click(function(){
         $("#div1").load("tax-centres.html #pei");
+    });
 });
+
 </script>
 
 
@@ -170,13 +174,13 @@ $("#bt1n").on("click", function(){
 		<div>
 <p>Enter your postal code <br>
 			<input type="text">	</input>
-			<p id="#btn1" class="btn btn-default"> Search </p>
+			<p id="#button" class="btn btn-default"> Search </p>
 
 
   </p>
 
 		</div>
-    
+
        <div id="div1"></div>
 
 
