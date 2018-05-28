@@ -24,20 +24,20 @@
 <!--[if lte IE 9]>
 <![endif]-->
 
-<script
+<!-- <script
   src="https://code.jquery.com/jquery-1.12.4.min.js"
   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
   crossorigin="anonymous"></script>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-<!--  <script>
+  <script>
 
   $("#btn1").on('click', function() {
      $("#pei").show();
   });
 
-</script> -->
+</script>
 
 <script>
 
@@ -45,7 +45,15 @@
      $("#pei").show();
   });
 
+</script> -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+        $("#div1").load("tax-centres.html #pei");
+});
 </script>
+
 
 <noscript><link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/noscript.min.css" /></noscript>
 <!-- Google Tag Manager DO NOT REMOVE OR MODIFY - NE PAS SUPPRIMER OU MODIFIER -->
@@ -179,7 +187,7 @@ display: none;
 
 		</div>
 
-		<div id="">
+		<div id="pei">
 			<h3>Mail or fax your documents to:</h3>
 
 					 <p><b>Prince Edward Island Tax Centre</b>
@@ -191,98 +199,12 @@ display: none;
 	     </div>
 
 
-
-
-<!-- Tax offices -->
-
-		<div id="result-si-bc-tso" class="hidden">
-		<h3>Southern Interior B.C. Tax Services Office</h3>
-
-					<p><b>Office address:</b>
-					<br>277 Winnipeg Street
-					<br>Penticton BC  V2A 1N6</p>
-					<p><b>Fax number:</b> 250-492-8346</p>
-		</div>
-
-<!-- Tax centres -->
-
-		<div id="result-jonq" class="hidden">
-		<h3>Mail or fax your documents to:</h3>
-
-					<p><b>Jonquière Tax Centre</b>
-					<br>2251 René-Lévesque Boulevard
-					<br>Jonquière QC  G7S 5J2</p>
-
-					<p><b>Fax number:</b> 418-548-0846</p>
-
-		</div>
-
-
-		<div id="result-winn-1" class="hidden"> <!-- income tax and benefits -->
-		<h3>Mail or fax your documents to:</h3>
-
-					<p><b>Winnipeg Tax Centre</b>
-					<br>Post Office Box 14001, Station Main
-					<br>Winnipeg MB R3C 3M3</p>
-
-					<p><b>Fax number:</b> 204-984-5164</p>
-
-		</div>
-
-		<div id="result-winn-2" class="hidden"> <!-- all other correspondence -->
-		<h3>Mail or fax your documents to:</h3>
-
-					<p><b>Winnipeg Tax Centre</b>
-					<br>66 Stapon Road
-					<br>Winnipeg MB R3C 3M2</p>
-
-					<p><b>Fax number:</b> 204-984-5164</p>
-
-		</div>
-
-		<div id="result-sud-1" class="hidden"> <!-- income tax and benefits -->
-		<h3>Mail or fax your documents to:</h3>
-
-					<p><b>Sudbury Tax Centre</b>
-					<br>1050 Notre Dame Avenue
-					<br>Sudbury ON  P3A 5C2</p>
-
-					<p><b>Fax number:</b> 705-671-3994 and 1-855-276-1529</p>
-
-		</div>
-
-		<div id="result-sud-2" class="hidden"> <!-- all other correspondence -->
-		<h3>Mail or fax your documents to:</h3>
-
-					<p><b>Sudbury Tax Centre</b>
-					<br>Post Office Box 20000, Station A
-					<br>Sudbury ON  P3A 5C1</p>
-
-					<p><b>Fax number:</b> 705-671-3994 and 1-855-276-1529</p>
-
-		</div>
-
-
-		<div id="result-pei" class="hidden">
-		<h3>Mail or fax your documents to:</h3>
-
-					<p><b>Prince Edward Island Tax Centre</b>
-					<br>275 Pope Road
-					<br>Summerside PE  C1N 6A2</p>
-
-					<p><b>Fax number:</b> 902-432-6287</p>
-
-		</div>
+       <h2>Test load address 1</h2>
+       <div id="div1"></div>
 
 
 
-</div>
 
-</div>
-
-</div>
-
-</div>
 
 
             <div class="row pagedetails">
