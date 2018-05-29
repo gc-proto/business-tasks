@@ -163,19 +163,20 @@
 						T1 individual income tax return</li>
 
 
-						<li data-wb-fieldflow='{"action": "removeClass", "source":"#answer3", "class": "hidden"}'>
+			<li data-wb-fieldflow='{"action": "removeClass", "source":"#answer3", "class": "hidden"}'>
 
-							T2 corporate income tax return</li>
-							<li data-wb-fieldflow='{"action": "removeClass", "source":"#answer4", "class": "hidden"}'>
+			T2 corporate income tax return</li>
+      
+			<li data-wb-fieldflow='{"action": "removeClass", "source":"#answer2", "class": "hidden"}'>
 
 			Family and child benefits form</li>
 
 
-        <li data-wb-fieldflow='{"action": "removeClass", "source":"#answer5", "class": "hidden"}'>
+        <li data-wb-fieldflow='{"action": "removeClass", "source":"#answer4", "class": "hidden"}'>
 
 				Payroll related forms (including T4A)</li>
 
-        <li data-wb-fieldflow='{"action": "removeClass", "source":"#answer6", "class": "hidden"}'>
+        <li data-wb-fieldflow='{"action": "removeClass", "source":"#answer5", "class": "hidden"}'>
 
 				All business documents (except T2)</li>
 
@@ -217,7 +218,7 @@
 
     $(document).ready(function(){
         $("#2").click(function(){
-            $("#div2").load("tax-centres-pull-list.html #si-bc-tso");
+            $("#div2").load("tax-centres-pull-list.html #winn-it-br");
         });
     });
 
@@ -238,20 +239,20 @@
       <script>
 
       $(document).ready(function(){
-          $("#6").click(function(){
-              $("#div6").load("tax-centres-pull-list.html #pei");
+          $("#5").click(function(){
+              $("#div5").load("tax-centres-pull-list.html #pei");
           });
       });
 
       </script>
 
-  		<div id="answer6" class="hidden">
+  		<div id="answer5" class="hidden">
         <div>
     <p>Enter your postal code </p>
     			<input type="text">	</input>
-    			<button id="6"> Search </button>
+    			<button id="5"> Search </button>
 
- <div id="div6"></div>
+ <div id="div5"></div>
     		</div>
 
 
