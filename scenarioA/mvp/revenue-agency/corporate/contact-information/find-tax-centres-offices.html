@@ -148,8 +148,8 @@
 			<p>What do you want to do?</p>
 			<ul>
 				<li data-wb-fieldflow='{"action": "append", "source":"#question2" }'>Mail or fax something to the CRA</li>
-				<li data-wb-fieldflow='{"action": "removeClass", "source":"#answer3", "class": "hidden"}'>Drop something off</li> <!-- same next step -->
-				<li data-wb-fieldflow='{"action": "removeClass", "source":"#answer3", "class": "hidden"}'>I have an appointment</li> <!-- same next step -->
+				<li data-wb-fieldflow='{"action": "removeClass", "source":"#answer1", "class": "hidden"}'>Drop something off</li> <!-- same next step -->
+				<li data-wb-fieldflow='{"action": "removeClass", "source":"#answer1", "class": "hidden"}'>I have an appointment</li> <!-- same next step -->
 			</ul>
 		</div>
 
@@ -159,19 +159,23 @@
 			<p>What are you mailing or faxing?</p>
 			<ul>
 
-					<li data-wb-fieldflow='{"action": "removeClass", "source":"#answer3", "class": "hidden"}'>
+					<li data-wb-fieldflow='{"action": "removeClass", "source":"#answer2", "class": "hidden"}'>
 						T1 individual income tax return</li>
 
 
 						<li data-wb-fieldflow='{"action": "removeClass", "source":"#answer3", "class": "hidden"}'>
 
 							T2 corporate income tax return</li>
-							<li data-wb-fieldflow='{"action": "removeClass", "source":"#answer3", "class": "hidden"}'>
+							<li data-wb-fieldflow='{"action": "removeClass", "source":"#answer4", "class": "hidden"}'>
 
 			Family and child benefits form</li>
 
 
-				<li data-wb-fieldflow='{"action": "removeClass", "source":"#answer3", "class": "hidden"}'>
+        <li data-wb-fieldflow='{"action": "removeClass", "source":"#answer5", "class": "hidden"}'>
+
+				Payroll related forms (including T4A)</li>
+
+        <li data-wb-fieldflow='{"action": "removeClass", "source":"#answer6", "class": "hidden"}'>
 
 				All business documents (except T2)</li>
 
@@ -179,136 +183,59 @@
 		</div>
 
 
-
-
-<!-- Tax offices -->
-
-		<div id="result-si-bc-tso" class="hidden">
-		<h3>Southern Interior B.C. Tax Services Office</h3>
-
-					<p><b>Office address:</b>
-					<br>277 Winnipeg Street
-					<br>Penticton BC  V2A 1N6</p>
-					<p><b>Fax number:</b> 250-492-8346</p>
-		</div>
-
-<!-- Tax centres -->
-
-		<div id="result-jonq" class="hidden">
-		<h3>Mail or fax your documents to:</h3>
-
-					<p><b>Jonquière Tax Centre</b>
-					<br>2251 René-Lévesque Boulevard
-					<br>Jonquière QC  G7S 5J2</p>
-
-					<p><b>Fax number:</b> 418-548-0846</p>
-
-		</div>
-
-
-		<div id="result-winn-1" class="hidden"> <!-- income tax and benefits -->
-		<h3>Mail or fax your documents to:</h3>
-
-					<p><b>Winnipeg Tax Centre</b>
-					<br>Post Office Box 14001, Station Main
-					<br>Winnipeg MB R3C 3M3</p>
-
-					<p><b>Fax number:</b> 204-984-5164</p>
-
-		</div>
-
-		<div id="result-winn-2" class="hidden"> <!-- all other correspondence -->
-		<h3>Mail or fax your documents to:</h3>
-
-					<p><b>Winnipeg Tax Centre</b>
-					<br>66 Stapon Road
-					<br>Winnipeg MB R3C 3M2</p>
-
-					<p><b>Fax number:</b> 204-984-5164</p>
-
-		</div>
-
-		<div id="result-sud-1" class="hidden"> <!-- income tax and benefits -->
-		<h3>Mail or fax your documents to:</h3>
-
-					<p><b>Sudbury Tax Centre</b>
-					<br>1050 Notre Dame Avenue
-					<br>Sudbury ON  P3A 5C2</p>
-
-					<p><b>Fax number:</b> 705-671-3994 and 1-855-276-1529</p>
-
-		</div>
-
-		<div id="result-sud-2" class="hidden"> <!-- all other correspondence -->
-		<h3>Mail or fax your documents to:</h3>
-
-					<p><b>Sudbury Tax Centre</b>
-					<br>Post Office Box 20000, Station A
-					<br>Sudbury ON  P3A 5C1</p>
-
-					<p><b>Fax number:</b> 705-671-3994 and 1-855-276-1529</p>
-
-		</div>
-
-
-		<div id="result-pei" class="hidden">
-		<h3>Mail or fax your documents to:</h3>
-
-					<p><b>Prince Edward Island Tax Centre</b>
-					<br>275 Pope Road
-					<br>Summerside PE  C1N 6A2</p>
-
-					<p><b>Fax number:</b> 902-432-6287</p>
-
-		</div>
-
-
-
-
-
-
-		<!--buttons-->
-		<div id="question3buttona" class="hidden" >
-			<a href="charities-en.html" class="btn btn-primary">Continue</a>
-		</div>
-		<div id="question3buttonb" class="hidden" >
-			<a href="public-service-bodies-en.html" class="btn btn-primary">Continue</a>
-		</div>
-		<div id="question3buttonc" class="hidden" >
-			<a href="findout-taxi-en.html" class="btn btn-primary">Continue</a>
-		</div>
-		<div id="question3buttond" class="hidden" >
-			<a href="findout-business.html" class="btn btn-primary">Continue</a>
-		</div>
-
-
-
   </form>
 
 
 
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
       <script>
 
       $(document).ready(function(){
           $("button").click(function(){
-              $("#div1").load("tax-centres.html #pei");
+              $("#div1").load("tax-centres-pull-list.html #pei");
           });
       });
 
       </script>
 
-  		<div id="answer3" class="hidden">
+      <div id="answer1" class="hidden">
+        <div>
+    <p>Enter your postal code </p>
+          <input type="text">	</input>
+          <button> Search </button>
+
+    <div id="div1"></div>
+        </div>
+
+
+    </div>
+
+
+      <script>
+
+      $(document).ready(function(){
+          $("button").click(function(){
+              $("#div5").load("tax-centres-pull-list.html #pei");
+          });
+      });
+
+      </script>
+
+  		<div id="answer5" class="hidden">
         <div>
     <p>Enter your postal code </p>
     			<input type="text">	</input>
     			<button> Search </button>
 
- <div id="div1"></div>
+ <div id="div4"></div>
     		</div>
 
 
   </div>
+
+
 
 </div>
 
