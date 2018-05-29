@@ -143,7 +143,7 @@
 			"noForm": true,
 			"base": { "live": true },
 			"noreqlabel": true,
-			"default": { "action": "addClass", "source":"#question1,#question1button,#question2button,#question2abutton,#question3buttona,#question3buttonb,#question3buttonc,#question4buttona,#question4buttonb,#question4buttonc,#question2,#question2a,#question3,#answer3,#question4,#result1,#result2,#result-si-bc-tso,#result-jonq,#result-winn-1,#result-winn-2,#result-sud-1,#result-sud-2,#result-pei,#result-int", "class": "hidden" }
+			"default": { "action": "addClass", "source":"#question1,#question1button,#question2button,#question2abutton,#question3buttona,#question3buttonb,#question3buttonc,#question4buttona,#question4buttonb,#question4buttonc,#question2,#question2a,#question3,#answer1,#answer2,#answer3,#answer4,#answer5,#answer6,#question4,#result1,#result2,#result-si-bc-tso,#result-jonq,#result-winn-1,#result-winn-2,#result-sud-1,#result-sud-2,#result-pei,#result-int", "class": "hidden" }
 			}'>
 			<p>What do you want to do?</p>
 			<ul>
@@ -194,7 +194,7 @@
 
       $(document).ready(function(){
           $("button").click(function(){
-              $("#div1").load("tax-centres-pull-list.html #pei");
+              $("#div1").load("tax-centres-pull-list.html #si-bc-tso");
           });
       });
 
@@ -217,19 +217,19 @@
 
       $(document).ready(function(){
           $("button").click(function(){
-              $("#div5").load("tax-centres-pull-list.html #pei");
+              $("#div6").load("tax-centres-pull-list.html #pei");
           });
       });
 
       </script>
 
-  		<div id="answer5" class="hidden">
+  		<div id="answer6" class="hidden">
         <div>
     <p>Enter your postal code </p>
     			<input type="text">	</input>
     			<button> Search </button>
 
- <div id="div4"></div>
+ <div id="div6"></div>
     		</div>
 
 
