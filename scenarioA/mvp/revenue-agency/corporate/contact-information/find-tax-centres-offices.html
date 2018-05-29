@@ -172,7 +172,7 @@
 			Family and child benefits form</li>
 
 
-        <li data-wb-fieldflow='{"action": "removeClass", "source":"#answer4", "class": "hidden"}'>
+        <li li data-wb-fieldflow='{"action": "append", "source":"#question4" }'>
 
 				T4A and other payroll related forms</li>
 
@@ -183,6 +183,21 @@
 			</ul>
 		</div>
 
+		<div id="question4" class="wb-fieldflow-sub hidden" data-wb-fieldflow='{"renderas":"radio", "noreqlabel": true}'>
+			<p>My payroll form is:</p>
+			<ul>
+
+					<li data-wb-fieldflow='{"action": "removeClass", "source":"#answer3", "class": "hidden"}'>
+						A new, original returns/forms/slips</li>
+
+
+			<li data-wb-fieldflow='{"action": "removeClass", "source":"#answer4", "class": "hidden"}'>
+
+			An amendement, a cancellation or submitting additional returns/forms/slips</li>
+
+
+			</ul>
+		</div>
 
   </form>
 
@@ -235,6 +250,28 @@
 
 
   </div>
+
+<script>
+
+	$(document).ready(function(){
+			$("#3").click(function(){
+					$("#div3").load("tax-centres-pull-list.html #jonq-ncc");
+			});
+	});
+
+	</script>
+
+	<div id="answer3" class="hidden">
+		<div>
+<p>Enter your postal code </p>
+			<input type="text">	</input>
+			<button id="3"> Search </button>
+
+<div id="div3"></div>
+		</div>
+
+
+</div>
 
   <script>
 
