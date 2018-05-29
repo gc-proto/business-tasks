@@ -180,30 +180,6 @@
 
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script>
-
-    $(document).ready(function(){
-        $("button").click(function(){
-            $("#div1").load("tax-centres.html #pei");
-        });
-    });
-
-    </script>
-
-		<div id="answer3" class="hidden">
-      <div>
-  <p>Enter your postal code </p>
-  			<input type="text">	</input>
-  			<button> Search </button>
-
-
-  		</div>
-
-         <div id="div1"></div>
-</div>
-
-
 
 <!-- Tax offices -->
 
@@ -309,6 +285,31 @@
 
   </form>
 
+
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script>
+
+      $(document).ready(function(){
+          $("button").click(function(){
+              $("#div1").load("tax-centres.html #pei");
+          });
+      });
+
+      </script>
+
+  		<div id="answer3" class="hidden">
+        <div>
+    <p>Enter your postal code </p>
+    			<input type="text">	</input>
+    			<button> Search </button>
+
+
+    		</div>
+
+           <div id="div1"></div>
+  </div>
+  
 </div>
 
 </div>
