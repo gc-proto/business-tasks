@@ -24,12 +24,7 @@
 <!--[if lte IE 9]>
 <![endif]-->
 
-<script
-  src="https://code.jquery.com/jquery-1.12.4.min.js"
-  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
-  crossorigin="anonymous"></script>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <noscript><link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/noscript.min.css" /></noscript>
 <!-- Google Tag Manager DO NOT REMOVE OR MODIFY - NE PAS SUPPRIMER OU MODIFIER -->
@@ -183,46 +178,32 @@
 			</ul>
 		</div>
 
-<script>
 
-$("#btn1").on('click', function() {
-   $("#pei").show();
-});
 
-</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
 
-<style>
+    $(document).ready(function(){
+        $("button").click(function(){
+            $("#div1").load("tax-centres.html #pei");
+        });
+    });
 
-#pei {
-
-display: none;
-
-}
-
-</style>
-
+    </script>
 
 		<div id="answer3" class="hidden">
-<p>Enter your postal code <br>
-			<input type="text">	</input>
-			<button id="#btn1" class="btn btn-default"> Search </button>
+      <div>
+  <p>Enter your postal code <br>
+  			<input type="text">	</input>
+  			<button class="btn btn-default"> Search </button>
 
 
-  </p>
+    </p>
 
-		</div>
+  		</div>
 
-		<div id="pei">
-			<h3>Mail or fax your documents to:</h3>
-
-					 <p><b>Prince Edward Island Tax Centre</b>
-					 <br>275 Pope Road
-					 <br>Summerside PE  C1N 6A2</p>
-
-					 <p><b>Fax number:</b> 902-432-6287</p>
-
-	     </div>
-
+         <div id="div1"></div>
+</div>
 
 
 
