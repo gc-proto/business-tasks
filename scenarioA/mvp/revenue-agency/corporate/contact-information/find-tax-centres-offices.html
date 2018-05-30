@@ -218,7 +218,7 @@
 
       $(document).ready(function(){
           $("#1").click(function(){
-              $("#div1").load("tax-centres-pull-list.html #si-bc-tso");
+              $("#div1").load("tax-centres-pull-list.html #si-bc-tso-drop");
           });
       });
 
@@ -326,7 +326,27 @@
 
   </div>
 
+	<script>
 
+	$(document).ready(function(){
+			$("#6").click(function(){
+					$("#div6").load("tax-centres-pull-list.html #si-bc-tso-mail");
+			});
+	});
+
+	</script>
+
+	<div id="answer6" class="hidden">
+		<div>
+<p>Enter your postal code </p>
+			<input type="text">	</input>
+			<button id="6"> Search </button>
+
+<div id="div1"></div>
+		</div>
+
+
+</div>
 
 </div>
 
