@@ -147,7 +147,7 @@
 			"noForm": true,
 			"base": { "live": true },
 			"noreqlabel": true,
-			"default": { "action": "addClass", "source":"#question1,#question1button,#question2button,#question2abutton,#question3buttona,#question3buttonb,#question3buttonc,#question4buttona,#question4buttonb,#question4buttonc,#question2,#question2a,#question3,#answer1,#answer2,#answer3,#answer4,#answer5,#answer6,#question4,#result1,#result2,#result-si-bc-tso,#result-jonq,#result-winn-1,#result-winn-2,#result-sud-1,#result-sud-2,#result-pei,#result-int", "class": "hidden" }
+			"default": { "action": "addClass", "source":"#question1,#question1button,#question2button,#question2abutton,#question3buttona,#question3buttonb,#question3buttonc,#question4buttona,#question4buttonb,#question4buttonc,#question2,#question2a,#question3,#answer1,#answer2,#answer3,#answer4,#answer5,#answer6,#answer7,#question4,#result1,#result2,#result-si-bc-tso,#result-jonq,#result-winn-1,#result-winn-2,#result-sud-1,#result-sud-2,#result-pei,#result-int", "class": "hidden" }
 			}'>
 			<p>What do you want to do?</p>
 			<ul>
@@ -170,11 +170,11 @@
 						Family and child benefits form</li>
 
 
-			<li data-wb-fieldflow='{"action": "removeClass", "source":"#answer5", "class": "hidden"}'>
+			<li data-wb-fieldflow='{"action": "removeClass", "source":"#answer7", "class": "hidden"}'>
 
 			T2 corporate income tax return</li>
 
-			<li li data-wb-fieldflow='{"action": "removeClass", "source":"#answer5", "class": "hidden"}'>
+			<li li data-wb-fieldflow='{"action": "removeClass", "source":"#answer7", "class": "hidden"}'>
 
 			T3 trust return</li>
 
@@ -184,7 +184,7 @@
 
 				<li data-wb-fieldflow='{"action": "removeClass", "source":"#answer5", "class": "hidden"}'>
 
-				Other business document: GST/HST, business number, etc. (except T2)</li>
+				Other business document (except T2)</li>
 
 				<li data-wb-fieldflow='{"action": "removeClass", "source":"#answer6", "class": "hidden"}'>
 					Document to submit to my local tax service office</li>
@@ -193,6 +193,7 @@
 		</div>
 
 		<div id="question4" class="wb-fieldflow-sub hidden" data-wb-fieldflow='{"renderas":"radio", "noreqlabel": true}'>
+
 			<p>My payroll form is:</p>
 			<ul>
 
@@ -319,6 +320,20 @@
       </script>
 
   		<div id="answer5" class="hidden">
+
+				<section class="panel panel-default">
+				  <header class="panel-heading">
+				   <h5 class="panel-title">Examples of business documents</h5>
+				  </header>
+				  <div class="panel-body">
+				  <ul>
+						<li><small>***can we get some strong examples from CRA folks?***</small></li>
+					  <li><small>GST/HST returns</small></li>
+					  <li><small>business number documents</small></li>
+				   </ul>
+				  </div>
+				</section>
+
         <div>
     <p>Enter your postal code </p>
     			<input type="text">	</input>
@@ -341,6 +356,20 @@
 	</script>
 
 	<div id="answer6" class="hidden">
+
+		<section class="panel panel-default">
+			<header class="panel-heading">
+			 <h5 class="panel-title">Examples of documents for your local tax service office</h5>
+			</header>
+			<div class="panel-body">
+			<ul>
+				<li><small>***can we get some strong examples from CRA folks?***</small></li>
+				<li><small>audit appeals</small></li>
+				<li><small>fiscal year end forms</small></li>
+			 </ul>
+			</div>
+		</section>
+
 		<div>
 <p>Enter your postal code </p>
 			<input type="text">	</input>
@@ -350,7 +379,18 @@
 		</div>
 
 
+
 </div>
+
+<div id="answer7" class="hidden">
+
+	<div>
+<p>Enter your postal code </p>
+		<input type="text">	</input>
+		<button id="5"> Search </button>
+
+<div id="div5"></div>
+	</div>
 
 </div>
 
