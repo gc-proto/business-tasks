@@ -147,7 +147,7 @@
 			"noForm": true,
 			"base": { "live": true },
 			"noreqlabel": true,
-			"default": { "action": "addClass", "source":"#examplepayroll,#question1,#question1button,#question2button,#question2abutton,#question3buttona,#question3buttonb,#question3buttonc,#question4buttona,#question4buttonb,#question4buttonc,#question2,#question2a,#question3,#answer1,#answer2,#answer3,#answer4,#answer5,#answer6,#answer7,#question4,#result1,#result2,#result-si-bc-tso,#result-jonq,#result-winn-1,#result-winn-2,#result-sud-1,#result-sud-2,#result-pei,#result-int", "class": "hidden" }
+			"default": { "action": "addClass", "source":"#examplepayroll,#examplepayroll2,#question1,#question1button,#question2button,#question2abutton,#question3buttona,#question3buttonb,#question3buttonc,#question4buttona,#question4buttonb,#question4buttonc,#question2,#question2a,#question3,#answer1,#answer2,#answer3,#answer4,#answer5,#answer6,#answer7,#question4,#result1,#result2,#result-si-bc-tso,#result-jonq,#result-winn-1,#result-winn-2,#result-sud-1,#result-sud-2,#result-pei,#result-int", "class": "hidden" }
 			}'>
 			<p>What do you want to do?</p>
 			<ul>
@@ -208,7 +208,7 @@
 
 			Amended, cancelled, or additional information return/form/slip</li>
 
-	<li data-wb-fieldflow='{"action": "removeClass", "source":"#answer4", "class": "hidden"}'>
+	<li data-wb-fieldflow='{"action": "removeClass", "source":"#answer4, #examplepayroll2", "class": "hidden"}'>
 
 			Other payroll document</li>
 
@@ -229,6 +229,20 @@
 			</div>
 		</section>
 </div>
+
+<div id="examplepayroll2" class="hidden">
+		<section class="panel panel-default">
+			<header class="panel-heading">
+			 <h5 class="panel-title">Examples of other payroll forms</h5>
+			</header>
+			<div class="panel-body">
+			<ul>
+				<li><small>CPT1</small></li>
+			 </ul>
+			</div>
+		</section>
+</div>
+
   </form>
 
 
@@ -360,7 +374,8 @@
 				  <ul>
 
 					  <li><small>GST/HST returns</small></li>
-					  <li><small>business number and program account documents</small></li>
+					  <li><small>business number documents</small></li>
+						 <li><small>program account documents **is this accurate?, where do payroll program accounts get sent?**</small></li>
 				   </ul>
 				  </div>
 				</section>
