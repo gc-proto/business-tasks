@@ -147,7 +147,7 @@
 			"noForm": true,
 			"base": { "live": true },
 			"noreqlabel": true,
-			"default": { "action": "addClass", "source":"#question1,#question1button,#question2button,#question2abutton,#question3buttona,#question3buttonb,#question3buttonc,#question4buttona,#question4buttonb,#question4buttonc,#question2,#question2a,#question3,#answer1,#answer2,#answer3,#answer4,#answer5,#answer6,#answer7,#question4,#result1,#result2,#result-si-bc-tso,#result-jonq,#result-winn-1,#result-winn-2,#result-sud-1,#result-sud-2,#result-pei,#result-int", "class": "hidden" }
+			"default": { "action": "addClass", "source":"#examplepayroll,#question1,#question1button,#question2button,#question2abutton,#question3buttona,#question3buttonb,#question3buttonc,#question4buttona,#question4buttonb,#question4buttonc,#question2,#question2a,#question3,#answer1,#answer2,#answer3,#answer4,#answer5,#answer6,#answer7,#question4,#result1,#result2,#result-si-bc-tso,#result-jonq,#result-winn-1,#result-winn-2,#result-sud-1,#result-sud-2,#result-pei,#result-int", "class": "hidden" }
 			}'>
 			<p>What do you want to do?</p>
 			<ul>
@@ -163,11 +163,11 @@
 			<ul>
 
 					<li data-wb-fieldflow='{"action": "removeClass", "source":"#answer2", "class": "hidden"}'>
-						T1 individual income tax and benefit return</li>
+						Individual income tax and benefit return/form</li>
 
-						<li data-wb-fieldflow='{"action": "removeClass", "source":"#answer2", "class": "hidden"}'>
+					<!--	<li data-wb-fieldflow='{"action": "removeClass", "source":"#answer2", "class": "hidden"}'>
 
-						Family and child benefits form</li>
+						Family and child benefits form</li> -->
 
 
 			<li data-wb-fieldflow='{"action": "removeClass", "source":"#answer7", "class": "hidden"}'>
@@ -180,38 +180,55 @@
 
         <li li data-wb-fieldflow='{"action": "append", "source":"#question4" }'>
 
-				T4A and other payroll related form</li>
+				Payroll related form</li>
 
 				<li data-wb-fieldflow='{"action": "removeClass", "source":"#answer5", "class": "hidden"}'>
 
 				Other business document (except T2)</li>
 
 				<li data-wb-fieldflow='{"action": "removeClass", "source":"#answer6", "class": "hidden"}'>
-					Document to submit to my local tax service office</li>
+					Document to submit to your local tax service office</li>
 
 			</ul>
 		</div>
 
 		<div id="question4" class="wb-fieldflow-sub hidden" data-wb-fieldflow='{"renderas":"radio", "noreqlabel": true}'>
 
-			<p>My payroll form is:</p>
+
+			<p>My payroll form is:<br>
+</p>
+
 			<ul>
 
-					<li data-wb-fieldflow='{"action": "removeClass", "source":"#answer3", "class": "hidden"}'>
-						New/original return/form/slip</li>
+					<li data-wb-fieldflow='{"action": "removeClass", "source":"#answer3, #examplepayroll", "class": "hidden"}'>
+						New (first submission) return/form/slip</li>
 
 
-			<li data-wb-fieldflow='{"action": "removeClass", "source":"#answer4", "class": "hidden"}'>
+			<li data-wb-fieldflow='{"action": "removeClass", "source":"#answer4, #examplepayroll", "class": "hidden"}'>
 
 			Amended, cancelled, or additional information return/form/slip</li>
 
-			<li data-wb-fieldflow='{"action": "removeClass", "source":"#answer4", "class": "hidden"}'>
+	<li data-wb-fieldflow='{"action": "removeClass", "source":"#answer4", "class": "hidden"}'>
 
 			Other payroll document</li>
 
 			</ul>
 		</div>
 
+<div id="examplepayroll" class="hidden">
+		<section class="panel panel-default">
+			<header class="panel-heading">
+			 <h5 class="panel-title">Examples of payroll forms</h5>
+			</header>
+			<div class="panel-body">
+			<ul>
+				<li><small>T4, T4A</small></li>
+				<li><small>T5</small></li>
+				<li><small>PD24</small></li>
+			 </ul>
+			</div>
+		</section>
+</div>
   </form>
 
 
@@ -253,6 +270,20 @@
     </script>
 
     <div id="answer2" class="hidden">
+
+			<section class="panel panel-default">
+				<header class="panel-heading">
+				 <h5 class="panel-title">Examples of individual and benefit returns/forms</h5>
+				</header>
+				<div class="panel-body">
+				<ul>
+					<li><small>T1 individual income tax returns</small></li>
+					<li><small>Family and child benefit forms</small></li>
+
+				 </ul>
+				</div>
+			</section>
+
       <div>
   <p>Enter your postal code </p>
         <input type="text">	</input>
@@ -327,9 +358,9 @@
 				  </header>
 				  <div class="panel-body">
 				  <ul>
-						<li><small>***can we get some strong examples from CRA folks?***</small></li>
+
 					  <li><small>GST/HST returns</small></li>
-					  <li><small>business number documents</small></li>
+					  <li><small>business number and program account documents</small></li>
 				   </ul>
 				  </div>
 				</section>
@@ -363,7 +394,7 @@
 			</header>
 			<div class="panel-body">
 			<ul>
-				<li><small>***can we get some strong examples from CRA folks?***</small></li>
+				<li><small>changes to your business</small></li>
 				<li><small>audit appeals</small></li>
 				<li><small>fiscal year end forms</small></li>
 			 </ul>
