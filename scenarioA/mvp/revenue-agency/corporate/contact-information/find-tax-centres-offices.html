@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
   -->
-<title>Find a Tax Centre - Canada.ca</title>
+<title>Find your tax centre or tax services office - Canada.ca</title>
 <meta content="width=device-width,initial-scale=1" name="viewport">
 <!-- Meta data -->
 <meta name="description" content="Web Experience Toolkit (WET) includes reusable components for building and maintaining innovative Web sites that are accessible, usable, and interoperable. These reusable components are open source software and free for use by departments and external Web communities">
@@ -143,32 +143,50 @@
 			"noForm": true,
 			"base": { "live": true },
 			"noreqlabel": true,
-			"default": { "action": "addClass", "source":"#examplepayroll,#examplepayroll2,#question1,#question1button,#question2button,#question2abutton,#question3buttona,#question3buttonb,#question3buttonc,#question4buttona,#question4buttonb,#question4buttonc,#question2,#question2a,#question3,#answer1,#answer2,#answer3,#answer4,#answer5,#answer6,#answer7,#question4,#result1,#result2,#result-si-bc-tso,#result-jonq,#result-winn-1,#result-winn-2,#result-sud-1,#result-sud-2,#result-pei,#result-int", "class": "hidden" }
+			"default": { "action": "addClass", "source":"#examplepayroll,#followthem,#help,#examplepayroll2,#question1,#question1a,#question2button,#question2abutton,#question3buttona,#question3buttonb,#question3buttonc,#question4buttona,#question4buttonb,#question4buttonc,#question2,#question2a,#question3,#answer1,#answer2,#answer3,#answer4,#answer5,#answer6,#answer7,#question4,#result1,#result2,#result-si-bc-tso,#result-jonq,#result-winn-1,#result-winn-2,#result-sud-1,#result-sud-2,#result-pei,#result-int", "class": "hidden" }
 			}'>
 			<p>What do you want to do?</p>
 			<ul>
-				<li data-wb-fieldflow='{"action": "append", "source":"#question2" }'>Mail or fax something to the CRA</li>
+				<li data-wb-fieldflow='{"action": "append", "source":"#question1a" }'>Mail or fax something to the CRA</li>
 				<li data-wb-fieldflow='{"action": "removeClass", "source":"#answer1", "class": "hidden"}'>Drop something off</li> <!-- same next step -->
 
 		</div>
 
 
+				<div id="question1a" class="wb-fieldflow-sub hidden" data-wb-fieldflow='{"renderas":"radio", "noreqlabel": true}'>
+					<p>Is this form for a tax centre or a tax service office?</p>
+					<ul>
+
+							<li data-wb-fieldflow='{"action": "append", "source":"#question2" }'>
+								Tax centre</li>
+
+
+					<li data-wb-fieldflow='{"action": "removeClass", "source":"#answer6", "class": "hidden"}'>
+
+					Tax services office</li>
+
+					<li li data-wb-fieldflow='{"action": "append", "source":"#question2b" }'>
+
+					I don't know</li>
+
+					</ul>
+				</div>
 
 		<div id="question2" class="wb-fieldflow-sub hidden" data-wb-fieldflow='{"renderas":"radio", "noreqlabel": true}'>
 			<p>What are you mailing or faxing?</p>
 			<ul>
 
-					<li data-wb-fieldflow='{"action": "removeClass", "source":"#answer2", "class": "hidden"}'>
-						Individual income tax and benefit return/form</li>
+				<li data-wb-fieldflow='{"action": "removeClass", "source":"#answer2", "class": "hidden"}'>
 
-					<!--	<li data-wb-fieldflow='{"action": "removeClass", "source":"#answer2", "class": "hidden"}'>
+							Family and child benefits form</li>
 
-						Family and child benefits form</li> -->
+			<li data-wb-fieldflow='{"action": "removeClass", "source":"#answer2", "class": "hidden"}'>
+						T1 individual income tax and benefit return</li>
 
 
 			<li data-wb-fieldflow='{"action": "removeClass", "source":"#answer7", "class": "hidden"}'>
 
-			T2 corporate income tax return</li>
+			T2 corporation income tax return</li>
 
 			<li li data-wb-fieldflow='{"action": "removeClass", "source":"#answer7", "class": "hidden"}'>
 
@@ -176,45 +194,111 @@
 
         <li li data-wb-fieldflow='{"action": "append", "source":"#question4" }'>
 
-				Payroll return/form/slip</li>
+				Information form, return or slip (T4/T5 and other types of returns)</li>
 
 				<li data-wb-fieldflow='{"action": "removeClass", "source":"#answer5", "class": "hidden"}'>
 
-				Business return/form/slip (except T2)</li>
-
-				<li data-wb-fieldflow='{"action": "removeClass", "source":"#answer6", "class": "hidden"}'>
-					Form with mailing instructions to your nearest tax services office</li>
+				Business form or return, excluding T2 (GST/HST return and other types of forms or returns)</li>
 
 			</ul>
 		</div>
 
+
+		<div id="question2b" class="wb-fieldflow-sub hidden" data-wb-fieldflow='{"renderas":"radio", "noreqlabel": true}'>
+			<p>What are you mailing or faxing?</p>
+			<ul>
+
+				<li data-wb-fieldflow='{"action": "removeClass", "source":"#answer2", "class": "hidden"}'>
+
+							Family and child benefits form</li>
+
+			<li data-wb-fieldflow='{"action": "removeClass", "source":"#answer2", "class": "hidden"}'>
+						T1 individual income tax and benefit return</li>
+
+
+			<li data-wb-fieldflow='{"action": "removeClass", "source":"#answer7", "class": "hidden"}'>
+
+			T2 corporation income tax return</li>
+
+			<li li data-wb-fieldflow='{"action": "removeClass", "source":"#answer7", "class": "hidden"}'>
+
+			T3 trust return</li>
+
+				<li li data-wb-fieldflow='{"action": "append", "source":"#question4" }'>
+
+				Information form, return or slip (T4/T5 and other types of returns)</li>
+
+				<li data-wb-fieldflow='{"action": "removeClass", "source":"#answer5", "class": "hidden"}'>
+
+				Business form or return, excluding T2 (GST/HST return and other types of forms or returns)</li>
+
+				<li li data-wb-fieldflow='{"action": "append", "source":"#question5" }'>
+
+				None of the above</li>
+
+			</ul>
+		</div>
+
+
 		<div id="question4" class="wb-fieldflow-sub hidden" data-wb-fieldflow='{"renderas":"radio", "noreqlabel": true}'>
 
 
-			<p>My payroll form is:<br>
+			<p>My information form is a:<br>
 </p>
 
 			<ul>
 
 					<li data-wb-fieldflow='{"action": "removeClass", "source":"#answer3, #examplepayroll", "class": "hidden"}'>
-						New (first submission) return/form/slip</li>
+						New (first submission) return, form or slip</li>
 
 
 			<li data-wb-fieldflow='{"action": "removeClass", "source":"#answer4, #examplepayroll", "class": "hidden"}'>
 
-			Amended, cancelled, or additional information return/form/slip</li>
+			Amended, cancelled, or additional information form, return or slip</li>
 
 	<li data-wb-fieldflow='{"action": "removeClass", "source":"#answer4, #examplepayroll2", "class": "hidden"}'>
 
-			Other payroll return/form/slip</li>
+			Other information form, return or slip</li>
 
 			</ul>
 		</div>
 
+		<div id="question5" class="wb-fieldflow-sub hidden" data-wb-fieldflow='{"renderas":"radio", "noreqlabel": true}'>
+
+
+			<p>Does your form have specific mailing instructions?<br>
+</p>
+
+			<ul>
+
+					<li data-wb-fieldflow='{"action": "removeClass", "source":"#followthem", "class": "hidden"}'>
+						Yes, there is an address at the back, or at the top of the form</li>
+
+							<li data-wb-fieldflow='{"action": "append", "source":"#question2" }'>
+								Yes, mail to a tax centre</li>
+
+								<li data-wb-fieldflow='{"action": "removeClass", "source":"#answer6", "class": "hidden"}'>
+									Yes, mail to a tax services office</li>
+
+			<li data-wb-fieldflow='{"action": "removeClass", "source":"#help", "class": "hidden"}'>
+
+			No</li>
+
+			</ul>
+		</div>
+
+		<div id="followthem" class="hidden">
+			<p>Please use the specific address provided on the form</p>
+		</div>
+
+		<div id="help" class="hidden">
+			<p>Please contact the CRA at <b>1-800-959-5525</b></p>
+		</div>
+
 <div id="examplepayroll" class="hidden">
-		<section class="panel panel-default">
+	<!--	<section class="panel panel-default">
 			<header class="panel-heading">
-			 <h5 class="panel-title">Examples of payroll returns/forms/slips</h5>
+			 <h5 class="panel-title">Examples of information returns/forms/slips</h5>
 			</header>
 			<div class="panel-body">
 			<ul>
@@ -223,11 +307,11 @@
 				<li><small>PD24</small></li>
 			 </ul>
 			</div>
-		</section>
+		</section> -->
 </div>
 
 <div id="examplepayroll2" class="hidden">
-		<section class="panel panel-default">
+	<!--	<section class="panel panel-default">
 			<header class="panel-heading">
 			 <h5 class="panel-title">Examples of other payroll returns/forms/slips</h5>
 			</header>
@@ -236,7 +320,7 @@
 				<li><small>CPT1</small></li>
 			 </ul>
 			</div>
-		</section>
+		</section> -->
 </div>
 
   </form>
@@ -281,7 +365,7 @@
 
     <div id="answer2" class="hidden">
 
-			<section class="panel panel-default">
+		<!--	<section class="panel panel-default">
 				<header class="panel-heading">
 				 <h5 class="panel-title">Examples of individual income tax and benefit returns/forms</h5>
 				</header>
@@ -292,7 +376,7 @@
 
 				 </ul>
 				</div>
-			</section>
+			</section> -->
 
       <div>
   <p>Enter your postal code </p>
