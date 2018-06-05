@@ -187,3 +187,7 @@ background-color: #F8F8F8;
 	font-size: 18px !important;
 
 }
+
+abbr {
+	border-bottom: none;
+}
