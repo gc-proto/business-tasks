@@ -13,7 +13,11 @@ h2 {
 	font-size: 29px !important;
 	font-weight: 700 !important;
 	font-family: 'Open Sans', sans-serif; !important;
-	padding-bottom: 10px !important;
+	 padding-bottom: 10px; /* Note we can't do this globally because it doesn't work on topic pages */
+}
+
+h2.services-info {
+	padding-bottom: 0;
 }
 
 
