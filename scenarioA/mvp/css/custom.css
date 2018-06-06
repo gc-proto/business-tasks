@@ -189,5 +189,7 @@ background-color: #F8F8F8;
 }
 
 abbr {
-	border-bottom: none !important; 
+	border-bottom: none !important;
+	border-bottom-style: none !important;
+	text-decoration: none;
 }
